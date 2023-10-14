@@ -1,0 +1,296 @@
+/* * {
+	box-sizing: border-box;
+}
+html,
+body {
+	background-color: #fedcc8;
+	min-width: 100%;
+}
+.parallax {
+	perspective: 100px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+
+	right: 0;
+	bottom: 0;
+
+	width: 100%;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax__layer img,
+.parallax__layer svg {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.parallax__cover {
+	background: #2d112b;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 2000px;
+	z-index: 2;
+}
+.parallax__layer__0 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax__layer__1 {
+	width: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax__layer__2 {
+	width: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax__layer__3 {
+	width: 100%;
+}
+.parallax__layer__4 {
+	width: 100%;
+}
+.parallax__layer__5 {
+	width: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax__layer__6 {
+}
+
+.cls-bg {
+	fill: none;
+}
+.cls-0 {
+	fill: #000000;
+} */
+
+/* @import "compass/css3"; */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/* color: #ffae8e00; */
+}
+
+html {
+	background: radial-gradient(#eb9b9e 20%, rgb(100 56 117));
+
+	height: 100%;
+	/* max-width: 100vw; */
+	/* overflow-x: hidden;
+	overflow-y: scroll; */
+	min-width: 100%;
+}
+
+body {
+	background: linear-gradient(0deg, rgb(235, 97, 97) 20%, transparent 60%);
+	height: 100%;
+}
+
+/* —————————————————————————————— Parallax Stuff —————————————————————————————— */
+
+.parallax {
+	perspective: 100px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	margin-left: -1500px;
+}
+
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+img {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+.parallax-container {
+	/* border: 2px solid red; */
+}
+.parallax__cover {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 2000px;
+	z-index: 2;
+	/* mine */
+	outline: 10px solid #000; /* temp cover gap*/
+	background: #000;
+}
+/* .parallax__layer__5 {
+	filter: blur(5px);
+} */
+.nightbox {
+	position: absolute;
+	top: 0;
+	/* border: 5px solid green; */
+	width: 100%;
+	height: 40%;
+	background: linear-gradient(180deg, rgb(116 97 153) 10%, transparent);
+	z-index: 100;
+	mix-blend-mode: multiply;
+}
+/* .vignette {
+	overflow: hidden;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		black 19%,
+		transparent 20%,
+		transparent 80%,
+		black 81%
+	);
+	z-index: 100;
+	transform: translateZ(100px);
+	opacity: 1;
+	mix-blend-mode: darken;
+	background-blend-mode: darken;
+} */
+
+.parallax__layer__6 img {
+	scale: 1.7;
+}
+/* Sun */
+.parallax__layer__5 {
+	mix-blend-mode: multiply;
+}
+/* .parallax__layer__5 img {
+	transform: translateY(50px);
+} */
+.parallax__layer__4 img {
+	scale: 0.2;
+	transform: translateX(1700px) translateY(200px);
+	opacity: 1;
+	filter: contrast(0.8) saturate(1.5) hue-rotate(25deg) opacity(0.7) blur(1px);
+}
+.parallax__layer__3 img {
+	/* scale: 0.6;
+	transform: translateX(1300px) translateY(-1050px);
+
+	opacity: 1;
+	filter: contrast(0.6) saturate(1) hue-rotate(10deg) opacity(0.7) blur(1px); */
+
+	/* ———————————————————————————————————————————————————————————————————————————— */
+	scale: 0.9;
+	transform: translateX(-100px) translateY(-600px);
+	color: #b7894c;
+	opacity: 1;
+	filter: contrast(1.9) saturate(0.5) hue-rotate(-5deg) opacity(0.4)
+		brightness(0.8) blur(1px);
+}
+
+.parallax__layer__2 img {
+	/* scale: 0.9;
+	transform: translateX(-100px) translateY(-600px);
+	color: #b7894c;
+	opacity: 1;
+	filter: contrast(1.9) saturate(0.5) hue-rotate(-5deg) opacity(0.4)
+		brightness(0.8) blur(1px); */
+	/* ———————————————————————————————————————————————————————————————————————————— */
+	scale: 0.4;
+	transform: translateX(-100px) translateY(-200px);
+	color: #b7894c;
+	opacity: 1;
+	filter: contrast(0.6) saturate(1.4) hue-rotate(10deg) opacity(0.5)
+		brightness(1);
+}
+
+.parallax__layer__1 img {
+	/* scale: 0.4;
+	transform: translateX(-100px) translateY(-200px);
+	color: #b7894c;
+	opacity: 1;
+	filter: contrast(0.6) saturate(1.4) hue-rotate(10deg) opacity(0.5)
+		brightness(1); */
+	/* ———————————————————————————————————————————————————————————————————————————— */
+	scale: 0.6;
+	transform: translateX(1300px) translateY(-1050px);
+
+	opacity: 1;
+	filter: contrast(0.6) saturate(1) hue-rotate(10deg) opacity(0.7) blur(1px);
+}
+
+/* ———————————————————————————————————————————————————————————————————————————— */
+/* #hori {
+	position: fixed;
+	width: 200px;
+
+	left: 0;
+	top: 10px;
+	height: 200px;
+}
+#hori2 {
+	position: fixed;
+	width: 200px;
+	right: 0;
+	top: 10px;
+	height: 200px;
+}
+#heart {
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	right: 720px;
+	color: red;
+	display: block;
+}
+#sec {
+	height: 700px;
+	position: relative;
+} */
+
+/* ———————————————————————————— Smooth scroll stuff ——————————————————————————— */
+
+/* .js-cont {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.js-scroll {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	will-change: transform;
+} */
