@@ -10,14 +10,14 @@
 			defer
 			src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		></script>
-		<script defer src="index2.js" type="text/javascript"></script>
+		<!-- <script defer src="smoothScroll.js" type="text/javascript"></script> -->
 		<script defer src="index.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<div class="nightbox"></div>
 		<div class="vignette"></div>
 		<div class="parallax-container">
 			<div class="parallax">
+				<div class="nightbox"></div>
 				<div class="parallax__layer parallax__layer__0">
 					<!-- <img
 					src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
@@ -50,7 +50,12 @@
 				</div>
 			</div> -->
 				<!-- ————————————————————————————————————————————————————————————————————————— -->
-				<div class="parallax__layer parallax__layer__4">
+				<div
+					class="parallax__layer parallax__layer__4 scroll"
+					data-rateX="0"
+					data-rateY="200"
+					data-direction="horizontal"
+				>
 					<img height="1300" width="3000" src="./images/cloud-1.svg" />
 				</div>
 				<!-- ————————————————————————————————————————————————————————————————————————— -->
