@@ -93,6 +93,7 @@ body {
 	padding: 0;
 	margin: 0;
 	/* color: #ffae8e00; */
+	scroll-behavior: smooth;
 }
 
 html {
@@ -112,11 +113,19 @@ body {
 
 /* —————————————————————————————— Parallax Stuff —————————————————————————————— */
 
+.parallax-container * {
+	/* transition: all 1s;
+	transition-delay: 0s; */
+}
+.parallax-container {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 .parallax {
 	perspective: 100px;
 	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
+	/* overflow-x: hidden; */
+	/* overflow-y: auto; */
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -147,7 +156,7 @@ img {
 	left: 0;
 	right: 0;
 	height: 2000px;
-	z-index: 2;
+	z-index: -1;
 	/* mine */
 	outline: 10px solid #000; /* temp cover gap*/
 	background: #000;
@@ -192,23 +201,16 @@ img {
 .parallax__layer__5 {
 	mix-blend-mode: multiply;
 }
-/* .parallax__layer__5 img {
-	transform: translateY(50px);
-} */
+.parallax__layer__5 img {
+	transform: translateY(-50px);
+}
 .parallax__layer__4 img {
 	scale: 0.2;
-	transform: translateX(1700px) translateY(200px);
+	transform: translateX(2200px) translateY(200px);
 	opacity: 1;
 	filter: contrast(0.8) saturate(1.5) hue-rotate(25deg) opacity(0.7) blur(1px);
 }
 .parallax__layer__3 img {
-	/* scale: 0.6;
-	transform: translateX(1300px) translateY(-1050px);
-
-	opacity: 1;
-	filter: contrast(0.6) saturate(1) hue-rotate(10deg) opacity(0.7) blur(1px); */
-
-	/* ———————————————————————————————————————————————————————————————————————————— */
 	scale: 0.9;
 	transform: translateX(-100px) translateY(-600px);
 	color: #b7894c;
@@ -218,15 +220,8 @@ img {
 }
 
 .parallax__layer__2 img {
-	/* scale: 0.9;
-	transform: translateX(-100px) translateY(-600px);
-	color: #b7894c;
-	opacity: 1;
-	filter: contrast(1.9) saturate(0.5) hue-rotate(-5deg) opacity(0.4)
-		brightness(0.8) blur(1px); */
-	/* ———————————————————————————————————————————————————————————————————————————— */
 	scale: 0.4;
-	transform: translateX(-100px) translateY(-200px);
+	transform: translateX(-1000px) translateY(-200px);
 	color: #b7894c;
 	opacity: 1;
 	filter: contrast(0.6) saturate(1.4) hue-rotate(10deg) opacity(0.5)
@@ -234,13 +229,6 @@ img {
 }
 
 .parallax__layer__1 img {
-	/* scale: 0.4;
-	transform: translateX(-100px) translateY(-200px);
-	color: #b7894c;
-	opacity: 1;
-	filter: contrast(0.6) saturate(1.4) hue-rotate(10deg) opacity(0.5)
-		brightness(1); */
-	/* ———————————————————————————————————————————————————————————————————————————— */
 	scale: 0.6;
 	transform: translateX(1300px) translateY(-1050px);
 

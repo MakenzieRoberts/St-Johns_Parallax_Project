@@ -10,26 +10,56 @@
 			defer
 			src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		></script>
-		<script defer src="index2.js" type="text/javascript"></script>
+		<!-- <script defer src="index2.js" type="text/javascript"></script> -->
 		<script defer src="index.js" type="text/javascript"></script>
+		<script defer src="parallaxFinetune.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="nightbox"></div>
 		<div class="vignette"></div>
-		<div class="parallax-container">
+		<div class="parallax-container" id="parallax-container">
 			<div class="parallax">
 				<div class="parallax__layer parallax__layer__0">
 					<!-- <img
 					src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
 				/> -->
 				</div>
-				<div class="parallax__layer parallax__layer__1">
+				<!-- 
+					Formatting
+					---------
+
+					Vertical
+						class="scroll"
+						data-rate="1"
+						data-direction="vertical"
+					
+					Horizontal
+						class="scroll"
+						data-rateY="1"
+						data-rateX="-1"
+						data-direction="horizontal"
+				 -->
+				<div
+					class="parallax__layer parallax__layer__1 scroll"
+					data-rateY="10"
+					data-rateX="-10"
+					data-direction="horizontal"
+				>
 					<img height="455" width="3000" src="./images/cloud-6.svg" />
 				</div>
-				<div class="parallax__layer parallax__layer__2">
+				<div
+					class="parallax__layer parallax__layer__2 scroll"
+					data-rateX="0"
+					data-rateY="200"
+					data-direction="horizontal"
+				>
 					<img height="1300" width="3000" src="./images/cloud-5.svg" />
 				</div>
-				<div class="parallax__layer parallax__layer__3">
+				<div
+					class="parallax__layer parallax__layer__3 scroll"
+					data-rate="90"
+					data-direction="vertical"
+				>
 					<img height="1300" width="3000" src="./images/cloud-3.svg" />
 				</div>
 				<!-- ————————————————————————————————————————————————————————————————————————— -->
@@ -50,18 +80,34 @@
 				</div>
 			</div> -->
 				<!-- ————————————————————————————————————————————————————————————————————————— -->
-				<div class="parallax__layer parallax__layer__4">
+				<div
+					class="parallax__layer parallax__layer__4 scroll"
+					data-rateX="0"
+					data-rateY="50"
+					data-direction="horizontal"
+				>
 					<img height="1300" width="3000" src="./images/cloud-1.svg" />
 				</div>
 				<!-- ————————————————————————————————————————————————————————————————————————— -->
-				<div class="parallax__layer parallax__layer__5">
+				<div
+					class="parallax__layer parallax__layer__5 scroll"
+					data-rate="200"
+					data-direction="vertical"
+				>
 					<img
 						height="800"
 						width="3000"
 						src="./images/sunsky-transparent-bg.svg"
 					/>
 				</div>
-				<div class="parallax__layer parallax__layer__6">
+				<div
+					class="parallax__layer parallax__layer__6 scroll"
+					<!--
+					data-rate="-10"
+					data-direction="vertical"
+					--
+				>
+					>
 					<img height="455" width="3000" src="./images/city-and-water2.svg" />
 				</div>
 				<div class="parallax__cover"></div>
