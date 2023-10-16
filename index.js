@@ -39,7 +39,7 @@ function translateOnScroll(e) {
 	var i = 0,
 		length = translateTarget.length;
 	for (i; i < length; i++) {
-		applyTransition(translateTarget[i]);
+		// applyTransition(translateTarget[i]);
 		// Dividing by 1000 gives more control over speed
 		var pos = (window.pageYOffset * translateTarget[i].dataset.rate) / 1000;
 		if (translateTarget[i].dataset.direction === "vertical") {
@@ -55,3 +55,7 @@ function translateOnScroll(e) {
 		console.log(translateTarget[i].dataset);
 	}
 }
+// function applyTransition(parallaxLayer) {
+// 	parallaxLayer.style.transition = "all 1s";
+// 	parallaxLayer.style.transitionDelay = "0ms";
+// }
